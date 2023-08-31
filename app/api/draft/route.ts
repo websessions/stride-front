@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { draftMode } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { getPreviewPostBySlug } from '../../../lib/api'
