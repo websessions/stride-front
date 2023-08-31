@@ -5,7 +5,7 @@ import Date from './date'
 import CoverImage from './cover-image'
 import Avatar from './avatar'
 import MoreStories from './more-stories'
-// import { Container, Row, Col } from 'websessions-lay'
+import { GridContainer, GridItem } from './design-components/grid'
 
 import { getAllPosts } from '@/lib/api'
 import { CMS_NAME, CMS_URL } from '@/lib/constants'
@@ -55,7 +55,7 @@ function HeroPost({
   return (
     <section>
       <div className="mb-8 md:mb-16">
-        <CoverImage title={title} slug={slug} url={coverImage.url} />
+        {/* <CoverImage title={title} slug={slug} url={coverImage.url} /> */}
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
@@ -84,12 +84,6 @@ export default async function Page() {
   const morePosts = allPosts.slice(1)
 
   return (
-    // <Container>
-    //   <Row>
-    //     <Col>
-    //     </Col>
-    //   </Row>
-    // </Container>
     <div className="">
       <Intro />
       {heroPost && (

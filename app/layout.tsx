@@ -1,17 +1,24 @@
-import type { Metadata } from 'next'
-import { App } from './app'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'Surely Work',
-  description: 'Surely working on it',
-}
+import { App } from './app'
+import { GridContainer, GridItem } from './design-components/grid'
+import styled from 'styled-components'
+
+
+const AuthContainer = styled(GridContainer)`
+  height: 100dvh;
+`
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
       <body>
         <App>
-          {children}
+          <AuthContainer>
+            <GridItem $colStart={[1]} $colSpan={[12]}>
+              {children}
+            </GridItem>
+          </AuthContainer>
         </App>
       </body>
     </html>
