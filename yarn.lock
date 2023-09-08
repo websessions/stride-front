@@ -1080,6 +1080,15 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
+"@contentful/live-preview@^2.9.4":
+  version "2.9.4"
+  resolved "https://registry.yarnpkg.com/@contentful/live-preview/-/live-preview-2.9.4.tgz#0602b6339c532240e5c424e2a9c41fc5cee28fc8"
+  integrity sha512-tIofRywzwhOWLQdERYssRdIvO4CyzTWdPDGjSHqwjRg24LuFchyYGP+ezSWcQNrPp88ZJDlS16nD701asOEweg==
+  dependencies:
+    "@contentful/rich-text-types" "^16.2.0"
+    "@contentful/visual-sdk" "^1.0.0-alpha.15"
+    lodash.isequal "^4.5.0"
+
 "@contentful/rich-text-react-renderer@^15.17.1":
   version "15.17.1"
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.17.1.tgz#e173746e58f505fe8dd5335abf1e9ebc58f7157f"
@@ -1087,10 +1096,15 @@
   dependencies:
     "@contentful/rich-text-types" "^16.2.1"
 
-"@contentful/rich-text-types@^16.0.3", "@contentful/rich-text-types@^16.2.1":
+"@contentful/rich-text-types@^16.0.3", "@contentful/rich-text-types@^16.2.0", "@contentful/rich-text-types@^16.2.1":
   version "16.2.1"
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-16.2.1.tgz#27236f276f473500e0dd5e330a074a98fc2d223b"
   integrity sha512-fBxqYcyG3Nw33DhifuE7Ndw3xlrWlOMjwsOvhLmVP4LO475Qyy9ioRChtEt6DPUdH2SFpobvM0qqC/fVe0MNDA==
+
+"@contentful/visual-sdk@^1.0.0-alpha.15":
+  version "1.0.0-alpha.15"
+  resolved "https://registry.yarnpkg.com/@contentful/visual-sdk/-/visual-sdk-1.0.0-alpha.15.tgz#76ad4c60430284a5bf7f8b86f5275ebe1ac0084f"
+  integrity sha512-/cYIV3A/XQi8NZwbj9KOb0AvY19hiAG5oNtjQqbBH4l+tv/awDYTUJWT+gcnUmD+S6p3C0FNt45pNWH+pfKFaQ==
 
 "@discoveryjs/json-ext@^0.5.7":
   version "0.5.7"
@@ -2562,6 +2576,11 @@ lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
+
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
 
 lodash.isplainobject@^4.0.6:
   version "4.0.6"
