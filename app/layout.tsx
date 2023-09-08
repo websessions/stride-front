@@ -13,6 +13,17 @@ const inter = Inter({
   display: 'swap',
 })
 
+function Navbar() {
+  return (
+    <nav className="fixed top-0 left-0 w-screen bg-white z-50 p-5">
+      <div className="text-red">
+        stride
+      </div>
+    </nav>
+  )
+}
+
+
 function Footer() {
   return (
     <footer className="bg-accent-1 border-t border-accent-2">
@@ -49,10 +60,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        <section className="min-h-screen">
-          <main>{children}</main>
-          <Footer />
-        </section>
+        <Navbar />
+        <br />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
