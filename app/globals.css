@@ -1,3 +1,105 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Your main css file - eg, globals.css */
+@import './tailwind-base.css';
+
+@import '~@coveredinc/ui-core/index.css'; /* <-- Library css, after app base, before app components */
+
+@import './tailwind-components.css';
+
+[data-theme='stride-v2'] {
+	--font-weight-bold: 700;
+	--font-weight-semibold: 600;
+	--font-weight-regular: 400;
+  
+	--font-main: 'Open Sans';
+  
+	--font-display-lg-weight: var(--font-weight-semibold);
+	--font-display-md-weight: var(--font-weight-semibold);
+	--font-display-sm-weight: var(--font-weight-semibold);
+	--font-headline-lg-weight: var(--font-weight-bold);
+	--font-headline-md-weight: var(--font-weight-bold);
+	--font-headline-sm-weight: var(--font-weight-bold);
+  
+	--brand-500: #fff98d;
+	--brand-300: #fff98d;
+	--brand-50: #eae8e2;
+  
+	--primary-900: #1a1b1e;
+	--primary-800: #1a1b1e;
+	--primary-700: #1a1b1e;
+	--primary-600: #5e5d5a;
+	--primary-500: #636262;
+	--primary-400: #787878;
+	--primary-300: #969696;
+	--primary-200: #bbbab5;
+	--primary-100: #e2e2e2;
+	--primary-50: #f8f8f6;
+  
+	--secondary-900: #24192b;
+	--secondary-800: #3a2943;
+	--secondary-700: #513b5e;
+	--secondary-600: #6e4a7d;
+	--secondary-500: #826196;
+	--secondary-400: #9c76b4;
+	--secondary-300: #b78bd2;
+	--secondary-200: #d3a0f2;
+	--secondary-100: #e5c6f8;
+	--secondary-50: #fbf6fe;
+  
+	--success-900: #0f2913;
+	--success-800: #295930;
+	--success-700: #377440;
+	--success-600: #459050;
+	--success-500: #54ac61;
+	--success-400: #64ca73;
+	--success-300: #74e885;
+	--success-200: #a3f0ab;
+	--success-100: #d9f9db;
+	--success-50: #f3fdf3;
+  
+	--warning-900: #5c2205;
+	--warning-800: #8b3308;
+	--warning-700: #b9450a;
+	--warning-600: #fe6100;
+	--warning-500: #f37232;
+	--warning-400: #f69260;
+	--warning-300: #f8a880;
+	--warning-200: #fabea0;
+	--warning-100: #fbd3bf;
+	--warning-50: #fff7f3;
+  
+	--error-900: #740b19;
+	--error-800: #910e1f;
+	--error-700: #ad1025;
+	--error-600: #ca132c;
+	--error-500: #e71632;
+	--error-400: #ec314a;
+	--error-300: #ee4e64;
+	--error-200: #f16b7d;
+	--error-100: #f69ca8;
+	--error-50: #ffe9ec;
+  
+	--neutral-900: #1a1b1e;
+	--neutral-800: #35373b;
+	--neutral-700: #505259;
+	--neutral-600: #6a6e76;
+	--neutral-500: #81868e;
+	--neutral-400: #9b9ea5;
+	--neutral-300: #b4b6bb;
+	--neutral-200: #dcdde2;
+	--neutral-100: #f8f8f8;
+	--neutral-50: #ffffff;
+  
+	--header-background: #ffffff;
+	--header-extended-background: #ffffff;
+	--header-color: var(--primary-700);
+	--header-shadow: none;
+  
+	/* a {
+	  text-decoration-line: underline;
+	  text-decoration-color: var(--primary-700);
+	}
+  
+	a:hover {
+	  text-decoration-color: var(--primary-500);
+	} */
+  }

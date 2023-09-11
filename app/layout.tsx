@@ -1,23 +1,25 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import { EXAMPLE_PATH, CMS_NAME } from '@/lib/constants'
+// import { Button } from '@coveredinc/ui-core'
 
 export const metadata = {
   title: `Next.js and ${CMS_NAME} Example`,
   description: `This is a blog built with Next.js and ${CMS_NAME}.`,
 }
 
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
-  display: 'swap',
-})
+// const inter = Inter({
+//   variable: '--font-inter',
+//   subsets: ['latin'],
+//   display: 'swap',
+// })
 
 function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-screen bg-white z-50 p-5">
       <div className="text-red">
         stride
+        {/* <Button variant='primary'>Logo</Button> */}
       </div>
     </nav>
   )
@@ -58,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" data-theme='stride-v2'>
       <body>
         <Navbar />
         <br />
